@@ -1,0 +1,76 @@
+Starting run with 16 MPI rank(s) at : 2024-03-26 21:39:53.189898
+
+╔╦╗╦═╗╦╔═╗ ╔═╗  ┌─┐┌┬┐┬ ┬┬ ┬┌┐ 
+ ║ ╠╦╝║║═╬╗╚═╗  │   │ ├─┤└┬┘├┴┐
+ ╩ ╩╚═╩╚═╝╚╚═╝  └─┘ ┴ ┴ ┴ ┴ └─┘
+
+The local Hamiltonian of the problem:
+-1*c_dag('0',0)*c('0',0) + -1*c_dag('1',0)*c('1',0) + -1*c_dag('2',0)*c('2',0) + 2*c_dag('0',0)*c_dag('1',0)*c('1',0)*c('0',0) + 22*c_dag('0',0)*c_dag('2',0)*c('2',0)*c('0',0) + -20*c_dag('1',0)*c_dag('2',0)*c('2',0)*c('1',0)
+Using autopartition algorithm to partition the local Hilbert space
+Found 8 subspaces.
+
+Warming up ...
+21:39:53   9% ETA 00:00:00 cycle 456 of 5000
+
+
+
+Accumulating ...
+21:39:54   0% ETA 00:00:23 cycle 425 of 100000
+21:39:56   9% ETA 00:00:21 cycle 9167 of 100000
+21:39:59  20% ETA 00:00:18 cycle 20089 of 100000
+21:40:02  33% ETA 00:00:15 cycle 33644 of 100000
+21:40:06  50% ETA 00:00:11 cycle 50510 of 100000
+21:40:11  71% ETA 00:00:06 cycle 71567 of 100000
+21:40:17  97% ETA 00:00:00 cycle 97863 of 100000
+
+
+[Rank 0] Collect results: Waiting for all mpi-threads to finish accumulating...
+WARNING: Tau discontinuity of G_tau deviates appreciably from -1
+     .... max_element |g(0) + g(beta) + 1| = 0.0142939
+WARNING: Tau discontinuity of G_tau deviates appreciably from -1
+     .... max_element |g(0) + g(beta) + 1| = 0.0134321
+[Rank 0] Timings for all measures:
+Measure               | seconds   
+Auto-correlation time | 0.0367455 
+Average order         | 0.0219156 
+Average sign          | 0.0204131 
+G_tau measure         | 0.116404  
+Total measure time    | 0.195479  
+[Rank 0] Acceptance rate for all moves:
+Move set Insert two operators: 0.0978839
+  Move  Insert Delta_0: 0.101924
+  Move  Insert Delta_1: 0.0965676
+  Move  Insert Delta_2: 0.0951609
+Move set Remove two operators: 0.0979454
+  Move  Remove Delta_0: 0.101833
+  Move  Remove Delta_1: 0.0967249
+  Move  Remove Delta_2: 0.0952794
+Move set Insert four operators: 0.0153915
+  Move  Insert Delta_0_0: 0.0211177
+  Move  Insert Delta_0_1: 0.0134282
+  Move  Insert Delta_0_2: 0.0139303
+  Move  Insert Delta_1_0: 0.0134645
+  Move  Insert Delta_1_1: 0.0184925
+  Move  Insert Delta_1_2: 0.0132586
+  Move  Insert Delta_2_0: 0.0140191
+  Move  Insert Delta_2_1: 0.0131156
+  Move  Insert Delta_2_2: 0.0176961
+Move set Remove four operators: 0.0153667
+  Move  Remove Delta_0_0: 0.0214038
+  Move  Remove Delta_0_1: 0.0134159
+  Move  Remove Delta_0_2: 0.0139271
+  Move  Remove Delta_1_0: 0.0133887
+  Move  Remove Delta_1_1: 0.0183975
+  Move  Remove Delta_1_2: 0.0130374
+  Move  Remove Delta_2_0: 0.013894
+  Move  Remove Delta_2_1: 0.0131315
+  Move  Remove Delta_2_2: 0.0177138
+Move  Shift one operator: 0.540047
+[Rank 0] Warmup lasted: 1.11557 seconds [00:00:01]
+[Rank 0] Simulation lasted: 23.3667 seconds [00:00:23]
+[Rank 0] Number of measures: 100000
+Total number of measures: 1600000
+Average sign: 1
+Average order: 11.5638
+Auto-correlation time: 0
+実行時間: 25秒
